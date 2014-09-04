@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  host: localhost
+  min_messages: warning
+  pool: 2
+  timeout: 5000
+  username: twoweekapp
+  password: getwithit
+
+development:
+  <<: *default
+  database: twoweekapp_development1
+
+test:
+  <<: *default
+  pool: 4
+  database: twoweekapp_test1
+
+
+
+production:
+  <<: *default
+  pool: 5
+  database: twoweekapp_production1
+

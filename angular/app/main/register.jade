@@ -1,0 +1,14 @@
+
+h1 Register
+
+form(ng-submit='submitRegistration(registrationForm)', role='form', ng-init='registrationForm = {}')
+  .form-group
+    label email
+    input.form-control(type='email', name='email', ng-model='registrationForm.email', required='required')
+  .form-group
+    label password
+    input.form-control(type='password', name='password', ng-model='registrationForm.password', required='required')
+  .form-group
+    label password confirmation
+    input.form-control(type='password', name='password_confirmation', ng-model='registrationForm.password_confirmation', required='required')
+  button.btn.btn-primary.btn-lg(type='submit') Register

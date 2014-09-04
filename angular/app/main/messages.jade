@@ -1,0 +1,49 @@
+h1 Messages
+h3 Contact us
+form(ng-submit="Messages.sendEmail(Messages.contactUsEmail)")
+  //- label To
+  //- input(ng-model="newForm.to")
+  label Your Email
+  input(ng-model="newForm.from")
+  label Your Message
+  input(ng-model="newForm.body")
+  button(type="submit") Contact
+
+h3 notification when uploaded
+form(ng-submit="Messages.sendEmail(Messages.uploadNotificationEmail)")
+  button(type="submit") Upload image
+
+h3 registration
+form(ng-submit="Messages.register()")
+  button(type="submit") Register
+
+h3 reset password email 
+form(ng-submit="Messages.sendEmail(Messages.resetEmail)")
+  button(type="submit") Reset Password
+
+
+
+
+
+
+
+h3 Send message
+form(ng-submit="addMessage(newMessageText)")
+  input(ng-model="newMessageText")
+  button(type="submit") add message
+
+pre {{Messages |json}}
+h3 /api/gmailer responses
+table
+  tr(ng-repeat="response in Messages.gmailer")
+    td {{response}}
+button(ng-click="Messages.sendEmail({to:'tonytaudesign@gmail.com', subject:'Test email', body:'hello world!'})") Send Email
+
+pre {{messages}}
+ul
+  li(ng-repeat="message in messages")
+  input(ng-model="message.text", ng-change="messages.$save(message)")
+
+form(ng-submit="addMessage(newMessageText)")
+  input(ng-model="newMessageText")
+  button(type="submit") add message

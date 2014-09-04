@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/M/.nvm/v0.11.10/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angularfire' ]
+2 info using npm@1.4.23
+3 info using node@v0.11.10
+4 warn package.json angular@0.0.0 No description
+5 warn package.json angular@0.0.0 No repository field.
+6 warn package.json angular@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'angularfire', null ]
+9 verbose cache add name=undefined spec="angularfire" args=["angularfire",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'angularfire',
+10 verbose parsed url   path: 'angularfire',
+10 verbose parsed url   href: 'angularfire' }
+11 silly lockFile d327749f-angularfire angularfire
+12 verbose lock angularfire /Users/M/.npm/d327749f-angularfire.lock
+13 silly lockFile d327749f-angularfire angularfire
+14 silly lockFile d327749f-angularfire angularfire
+15 verbose addNamed [ 'angularfire', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 7dc4e5e4-angularfire angularfire@
+18 verbose lock angularfire@ /Users/M/.npm/7dc4e5e4-angularfire.lock
+19 silly addNameRange { name: 'angularfire', range: '*', hasData: false }
+20 verbose request where is /angularfire
+21 verbose request registry http://registry.npmjs.org/
+22 verbose request id 70c33f3d667979ef
+23 verbose url raw /angularfire
+24 verbose url resolving [ 'http://registry.npmjs.org/', './angularfire' ]
+25 verbose url resolved http://registry.npmjs.org/angularfire
+26 verbose request where is http://registry.npmjs.org/angularfire
+27 info trying registry request attempt 1 at 13:46:22
+28 http GET http://registry.npmjs.org/angularfire
+29 http 404 http://registry.npmjs.org/angularfire
+30 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '52',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   date: 'Tue, 26 Aug 2014 18:46:22 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   connection: 'close',
+30 verbose headers   'x-served-by': 'cache-ord1725-ORD',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1409078782.753467,VS0,VE39' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '52',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     date: 'Tue, 26 Aug 2014 18:46:22 GMT',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     connection: 'close',
+31 silly registry.get     'x-served-by': 'cache-ord1725-ORD',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1409078782.753467,VS0,VE39' } ]
+32 silly lockFile 7dc4e5e4-angularfire angularfire@
+33 silly lockFile 7dc4e5e4-angularfire angularfire@
+34 error 404 404 Not Found: angularfire
+34 error 404
+34 error 404 'angularfire' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404 It was specified as a dependency of 'angular'
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Darwin 13.3.0
+36 error command "node" "/Users/M/.nvm/v0.11.10/bin/npm" "install" "angularfire"
+37 error cwd /Users/M/Apps/baked-fresh-v1/angular
+38 error node -v v0.11.10
+39 error npm -v 1.4.23
+40 error code E404
+41 verbose exit [ 1, true ]

@@ -1,0 +1,17 @@
+h1 Sign in
+
+form(ng-submit='submitLogin(loginForm)', role='form', ng-init='loginForm = {}')
+  .form-group
+    label email
+    input.form-control(type='email', name='email', ng-model='loginForm.email', required='required')
+  .form-group
+    label password
+    input.form-control(type='password', name='password', ng-model='loginForm.password', required='required')
+  button.btn.btn-primary.btn-lg(type='submit') Sign in
+
+p or...
+button(ng-click="authenticate('github')") sign in github
+button(ng-click="authenticate('google')") sign in google
+button(ng-click="authenticate('twitter')") sign in twitter
+button(ng-click="authenticate('facebook')") sign in facebook
+

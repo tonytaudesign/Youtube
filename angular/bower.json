@@ -1,0 +1,31 @@
+{
+  "name": "angular",
+  "main": "app.js",
+  "version": "0.0.0",
+  "authors": [
+    "jessie <jessie@apollo.com.ph>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14"
+  },
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "angular-bootstrap": "~0.11.0",
+    "firebase": "~1.0.21",
+    "angularfire": "~0.8.0",
+    "ng-token-auth": "~0.0.20",
+    "angular-cookies": "~1.2.23",
+    "ng-file-upload": "~1.6.5",
+    "ng-file-upload-shim": "~1.6.5"
+  }
+}
