@@ -1,0 +1,2 @@
+module FuckeryHelper
+end

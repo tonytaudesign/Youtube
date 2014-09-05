@@ -8,6 +8,6 @@ Bundler.require(*Rails.groups)
 
 module Twoweekapp
   class Application < Rails::Application
-    
+    config.autoload_paths += Dir[File.join(Rails.root, "lib", "core_ext", "*.rb")].each {|l| require l }
   end
 end

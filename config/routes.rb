@@ -1,5 +1,6 @@
 Twoweekapp::Application.routes.draw do
   
-   
-  get "videos/aws_signature"
+  
+        match 'api/s3policy', :to => 'videos#aws_signature', via: [:get, :post]
+  
 end
